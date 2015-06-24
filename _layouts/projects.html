@@ -3,21 +3,34 @@ layout: default
 title: Experiments
 ---
 
-<div id="home">
-  <ul class="posts">
-    {% assign projects_sorted = (site.projects | sort: 'date') %}
-    {% for post in projects_sorted reversed %}
-    <li>
-      <a target=_blank href="{{ post.link }}">
-        <div class="p-wrap">
-          <p class="p-title"><strong>{{ post.title }}</strong></p><br/>
-          <p class="p-desc">{{ post.description }}</p>
-        </div>
+<header>
+  <div class="h-wrap">
+    <h1 class="title">
+      <a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">
+      Marani's Experiments
       </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+    </h1>
+    <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+  </div>
+</header>
+
+<main>
+  <div id="home">
+    <ul class="posts">
+      {% assign projects_sorted = (site.projects | sort: 'date') %}
+      {% for post in projects_sorted reversed %}
+      <li>
+        <a target=_blank href="{{ post.link }}">
+          <div class="p-wrap">
+            <p class="p-title"><strong>{{ post.title }}</strong></p><br/>
+            <p class="p-desc">{{ post.description }}</p>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>
 
 <footer>
   <span><blockquote><i>"I was born not knowing and only have had a little time to change that here and there." - Richard Feynman</i></blockquote></span>
@@ -30,6 +43,6 @@ title: Experiments
     <a target="_blank" href="http://linkd.in/{{ site.linkedin }}">Linkedin</a></span>
     <a> - </a>
     <a href="mailto:dung1@e.ntu.edu.sg">Email</a></span>
-  <!-- <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</small> -->
+    <!-- <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</small> -->
 </footer>
 

@@ -3,30 +3,40 @@ layout: default
 title: Gallery
 ---
 
-<div id="gallery" style="display:none;">
-  <a href="">
-    <img alt="" src="{{ site.baseurl }}/assets/img/gallery/mirana.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/mirana.jpg" data-description="" style="display:none">
-  </a>
-  <a href="">
-    <img alt="" src="{{ site.baseurl }}/assets/img/gallery/adm.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/adm.jpg" data-description="" style="display:none">
-  </a>
-  <a href="">
-    <img alt="" src="{{ site.baseurl }}/assets/img/gallery/dakota.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/dakota.jpg" data-description="" style="display:none">
-  </a>
-  <a href="">
-    <img alt="" src="{{ site.baseurl }}/assets/img/gallery/dakota-2.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/dakota-2.jpg" data-description="" style="display:none">
-  </a>
-  <a href="">
-    <img alt="" src="{{ site.baseurl }}/assets/img/gallery/cassie.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/cassie.jpg" data-description="" style="display:none">
-  </a>
-  <a href="">
-    <img alt="" src="{{ site.baseurl }}/assets/img/gallery/hall7.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/hall7.jpg" data-description="" style="display:none">
-  </a>
-</div>
-<link rel='stylesheet' href="{{ site.baseurl| split: '/' | join:'/' }}/css/unite-gallery.css" type='text/css' />
-<script src="{{ site.baseurl }}/js/jquery.js"></script>
-<script src="{{ site.baseurl }}/js/plugins.js"></script>
-<script src="{{ site.baseurl }}/js/gallery.js"></script>
+<header>
+  <div class="h-wrap">
+    <h1 class="title">
+      <a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">
+      Marani's Experiments
+      </a>
+    </h1>
+    <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+  </div>
+</header>
+
+<main>
+  <div id="gallery" style="display:none;">
+    <a href="">
+      <img alt="" src="{{ site.baseurl }}/assets/img/gallery/mirana.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/mirana.jpg" data-description="" style="display:none">
+    </a>
+    <a href="">
+      <img alt="" src="{{ site.baseurl }}/assets/img/gallery/adm.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/adm.jpg" data-description="" style="display:none">
+    </a>
+    <a href="">
+      <img alt="" src="{{ site.baseurl }}/assets/img/gallery/dakota.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/dakota.jpg" data-description="" style="display:none">
+    </a>
+    <a href="">
+      <img alt="" src="{{ site.baseurl }}/assets/img/gallery/dakota-2.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/dakota-2.jpg" data-description="" style="display:none">
+    </a>
+    <a href="">
+      <img alt="" src="{{ site.baseurl }}/assets/img/gallery/cassie.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/cassie.jpg" data-description="" style="display:none">
+    </a>
+    <a href="">
+      <img alt="" src="{{ site.baseurl }}/assets/img/gallery/hall7.jpg" data-image="{{ site.baseurl }}/assets/img/gallery/hall7.jpg" data-description="" style="display:none">
+    </a>
+  </div>
+</main>
+
 <footer>
   <!-- <span><blockquote><i>"The most beautiful thing we can experience is the mysterious — the knowledge of the existence of something unfathomable to us, the manifestation of the most profound reason coupled with." - Albert Einstein</i></blockquote></span> -->
   <span><blockquote><i>"Learning never exhausts the mind.”
@@ -43,3 +53,8 @@ title: Gallery
   <a href="mailto:dung1@e.ntu.edu.sg">Email</a></span>
   <!-- <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</small> -->
 </footer>
+
+<link rel='stylesheet' href="{{ site.baseurl| split: '/' | join:'/' }}/css/unite-gallery.css" type='text/css' />
+<script src="{{ site.baseurl }}/js/jquery.js"></script>
+<script src="{{ site.baseurl }}/js/plugins.js"></script>
+<script src="{{ site.baseurl }}/js/gallery.js"></script>
