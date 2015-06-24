@@ -1,0 +1,20 @@
+---
+layout: default
+title: Experiments
+---
+
+<div id="home">
+  <ul class="posts">
+    {% assign projects_sorted = (site.projects | sort: 'date') %}
+    {% for post in projects_sorted reversed %}
+    <li>
+      <a target=_blank href="{{ post.link }}">
+        <div class="p-wrap">
+          <p class="p-title"><strong>{{ post.title }}</strong></p><br/>
+          <p class="p-desc">{{ post.description }}</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
