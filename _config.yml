@@ -1,5 +1,5 @@
 # Title of your blog; shows in the header
-name: "marani"
+name: "Marani's Thoughts & Experiments"
 
 description: "Thoughts & Experiments"
 
@@ -7,8 +7,6 @@ author: "Will Parry"
 
 url: "http://marani.github.io"
 baseurl: ""
-
-author-bio: "I was born not knowing and I only have a little time to change that here and there."
 
 facebook: yzioh
 twitter: marani

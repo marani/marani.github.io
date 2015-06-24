@@ -1,10 +1,9 @@
 .posts {
   overflow: hidden;
   li {
-    display: inline-block;
+    display: block;
     width: 100%;
     border-bottom: 1px solid darken($main-color, 6%);
-
     &:first-child {
       border-top: 1px solid darken($main-color, 6%);
     }
@@ -13,6 +12,8 @@
       padding: $spacing-ml $spacing-m;
       background: $main-color;
       transition: all .15s ease-in;
+      overflow: hidden;
+      text-overflow: ellipsis;
       &:active {
         background: darken($main-color, 3%);
       }
@@ -34,6 +35,7 @@
       p {
         display: inline;
         margin: $spacing-xs 0 0;
+        white-space: nowrap;
       }
     } // end .p-wrap
 

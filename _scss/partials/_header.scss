@@ -48,7 +48,6 @@ header {
         -webkit-transform: rotate(-45deg);
         margin: 0;
       }
-
     } // end .lines
   } // end .close
 } // end .h-wrap
@@ -150,7 +149,7 @@ header {
   }
 
   .avatar {
-    display: block;
+    display: none;
     margin-bottom: $spacing-s;
     img {
       width: 6em;
