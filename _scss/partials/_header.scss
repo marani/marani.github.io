@@ -23,8 +23,8 @@ header {
 
   .close {
     .lines {
-      -webkit-transition: background .3s 0s ease;
-      transition:         background .3s 0s ease;
+      -webkit-transition: background .1s 0s ease;
+      transition:         background .1s 0s ease;
       background: transparent;
 
       &::before,
@@ -32,9 +32,9 @@ header {
         top:0;
         width: 30px;
         -webkit-transition: top .3s ease,
-                            transform .3s .5s ease;
+                            transform .3s ease;
         transition:         top .3s ease,
-                            transform .3s .5s ease;
+                            transform .3s ease;
       }
 
       &::before {
@@ -96,7 +96,7 @@ header {
     &::before { top: 8px; }
     &::after { top: -8px; }
 
-    &.toggled {
+    &.close {
       background: transparent;
       &::before {
         top: 0;

@@ -10,13 +10,13 @@ window.onload = function() {
     toggleClass($siteWrap, 'open');
   }, false);
 
-  $menuIcon.addEventListener('mouseenter', function() {
-    addClass($menuIcon, 'hover');
-  });
+  // $menuIcon.addEventListener('mouseenter', function() {
+  //   addClass($menuIcon, 'hover');
+  // });
 
-  $menuIcon.addEventListener('mouseleave', function() {
-    removeClass($menuIcon, 'hover');
-  });
+  // $menuIcon.addEventListener('mouseleave', function() {
+  //   removeClass($menuIcon, 'hover');
+  // });
 
   function addClass(element, className) {
     element.className += " " + className;
