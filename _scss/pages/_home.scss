@@ -20,14 +20,14 @@
       &:hover {
         background: lighten($main-color, 3%);
         padding-left: $spacing-m + $spacing-s;
-        &::after {
-          content:'\2192';
-          margin-left: $spacing-xs;
-          @media (max-width: 942px) {
-            content: none;
-            margin: 0;
-          }
-        }
+        // &::after {
+        //   content:'\2192';
+        //   margin-left: $spacing-xs;
+        //   @media (max-width: 942px) {
+        //     content: none;
+        //     margin: 0;
+        //   }
+        // }
       }
       @media (max-width: 942px) {
         padding: $spacing-m $spacing-m;
